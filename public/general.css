@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 22px;
+  margin-left: 150px;
+}
+
+.event-preview {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.thumb-wrapper {
+  position: relative;
+  width: 100%
+}
+
+.thumbnail {
+  width: 100%;
+  margin: 0;
+  display: block;
+  margin-top: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.favorite-button {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 12px;
+  right: 12px;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-button:hover {
+  background-color: rgb(210, 210, 210);
+  opacity: 0.8;
+}
+
+.favorite-button:active {
+  opacity: 0.5;
+}
+
+.favorite-button.active .favorites {
+  filter: invert(29%) sepia(93%) saturate(7484%) hue-rotate(352deg) brightness(93%) contrast(108%);
+}
+
+.heart {
+  width: 20px;
+  height: 23px;
+  fill: none;
+  stroke: rgb(21, 161, 255);;
+  stroke-width: 2;
+}
+
+.favorite-button.active .heart {
+fill: #ff4d4d;   /* solid red fill */
+stroke: #ff4d4d;
+}
+
+.favorites {
+  padding-top: 2px;
+  background-color: rgba(255, 255, 255, 0.084);
+  width: 20px;
+  height: 20px;
+}
+
+.venue-suggest {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 150px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.insert-venue {
+  font-family: Arial;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: -8px;
+  cursor: pointer;
+ 
+}
+
+.insert-price {
+  font-family: Arial;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Footer positioning at the bottom of the page */
+body {
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #536db3;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}

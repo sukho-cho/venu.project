@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Venu</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+
+    <style>
+    /* Dim other fields in the searchbar when one field is focused */
+    .searchbar .field { transition: opacity .18s ease, filter .18s ease, color .18s ease; }
+    .searchbar .field.dimmed { opacity: 0.45; filter: grayscale(40%); color: #777; }
+    /* optional subtle highlight when hovering the whole searchbar */
+    .searchbar.hovered { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    </style>
+
+  </head>
+  <body style="height: 1500px;">
+      <div class="header">
+        <div class="left-section">
+         <img class="venu-logo" src="icons/icon-2.png">
+         </div>
+      <div class="middle-section">
+        <button class="event-button">
+        <img class="event-icon" src="icons/icon-1.png">
+        <div class="event">EVENTS</div>
+      </button>
+      </div>
+       
+      <div class="right-section">
+        <button class="list-your-place">
+          List your place
+        </button>
+        <button class="currency">
+          PHP
+        </button> 
+        <button class="sign-in">
+          Sign-in
+        </button>
+        <button class="create-account">
+          Create an Account
+        </button>
+        <button class="language-button">
+          <img class="language-icon" src="icons/icon-3.png">
+        </button>
+
+        <!-- burger button -->
+        <button class="burger-button" id="burgerToggle" aria-expanded="false" aria-label="Open menu">
+          <img class="burger-icon" src="icons/icon-4.png" alt="Menu Icon">
+        </button>
+        <div class="burger-popup" id="burgerPopup" aria-hidden="true">
+          <div id="my-menu" class="popup-menu">
+            <div class="menu-top">
+              <button class="menu-item" type="button">Help Center</button>
+              <button class="menu-item" type="button">My Events</button>
+            </div>
+            <div class="menu-divider" role="separator" aria-hidden="true"></div>
+            <div class="menu-auth">
+              <button class="popup-signin">Sign in</button>
+              <button class="popup-create">Create Account</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+   
+      <div class="venu-motto">
+        <p>Plan less, celebrate more</p>
+      </div>
+      <div class="searchbar">
+        <div class="field">
+          <label>Where</label>
+          <input type="text" placeholder="Search event">
+        </div>
+
+      <div class="field">
+          <label>Occasion</label>
+          <input type="text" placeholder="Add occasion">
+      </div>
+
+      <div class="field">
+        <label>When</label>
+        <input type="text" placeholder="Add dates">
+      </div>
+
+        <div class="field">
+          <label>Guest</label>
+          <input type="text" placeholder="Add pax">
+        </div>
+
+        <div class="field">
+          <label>Budget</label>
+          <input type="text" placeholder="Add budget">
+        </div>
+        <button class="search-button">
+          <img src="icons/icon-5.png" alt="search" />
+        </button>
+      </div>
+      </div>
+        <h2 class="venue-suggest">Popular Birthday venues in Cebu City ></h2>
+        <div class="event-grid">
+  
+      <div class="event-preview">
+        <div class="thumb-wrapper">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+          <button class="favorite-button">
+        <div class="circle"></div>
+      <svg class="heart" viewBox="0 0 24 24">
+      <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+      </svg>
+     </button>
+        <p class="insert-venue">
+        Insert Event Venue
+        </p>
+        <p class="insert-price">
+        Insert Price
+        </p>
+      </div>
+      </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+         <button class="favorite-button">
+      <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+      <p class="insert-venue">
+      Insert Event Venue
+      </p>
+      <p class="insert-price">
+      Insert Price
+      </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+    </button>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+    <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+      </button>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+    <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+    <p class="insert-venue">
+     Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+    <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+    </button>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+    <div class="thumb-wrapper">
+     <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+     <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+     </div>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+    </div>
+
+    </div>
+      
+    <h2 class="venue-suggest">Affordable Anniversary venues near you ></h2>
+        <div class="event-grid">
+    <div class="event-preview">
+        <div class="thumb-wrapper">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+        <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+      </button>
+        <p class="insert-venue">
+        Insert Event Venue
+        </p>
+        <p class="insert-price">
+        Insert Price
+        </p>
+      </div>
+      </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+        <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+      <p class="insert-venue">
+      Insert Event Venue
+      </p>
+      <p class="insert-price">
+      Insert Price
+      </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+    <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+    <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+        <button class="favorite-button">
+      <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+    </button>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+       <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+       <button class="favorite-button">
+      <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+      <p class="insert-venue">
+      Insert Event Venue
+      </p>
+      <p class="insert-price">
+      Insert Price
+      </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+    <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+     </div>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+    </div>
+    <h2 class="venue-suggest">Recommended venues in Lapu-Lapu City ></h2>
+      <div class="event-grid">
+      <div class="event-preview">
+        <div class="thumb-wrapper">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+          <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+        <p class="insert-venue">
+        Insert Event Venue
+        </p>
+        <p class="insert-price">
+        Insert Price
+        </p>
+      </div>
+      </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+         <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+      <p class="insert-venue">
+      Insert Event Venue
+      </p>
+      <p class="insert-price">
+      Insert Price
+      </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+    <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+    <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+    <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+      <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+    <p class="insert-venue">
+     Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+      <div class="thumb-wrapper">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <button class="favorite-button">
+     <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+     </button>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+    </div>
+
+    <div class="event-preview">
+    <div class="thumb-wrapper">
+     <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+     <button class="favorite-button">
+    <div class="circle"></div>
+    <svg class="heart" viewBox="0 0 24 24">
+      <path d="M12 21s-6-4.35-10-9c-3.33-4 0-11 6-8 3 1 4 3 4 3s1-2 4-3c6-3 9.33 4 6 8-4 4.65-10 9-10 9z"/>
+    </svg>
+    </button>
+     </div>
+    <p class="insert-venue">
+    Insert Event Venue
+    </p>
+    <p class="insert-price">
+    Insert Price
+    </p>
+    </div>
+  </div>
+  </div>
+  <script src="body.js"></script>
+    <script>
+    (function(){
+      const searchbar = document.querySelector('.searchbar');
+      if(!searchbar) return;
+
+      function dimOthers(activeField){
+        const fields = Array.from(searchbar.querySelectorAll('.field'));
+        fields.forEach(f => {
+          if(f === activeField) f.classList.remove('dimmed'); else f.classList.add('dimmed');
+        });
+      }
+
+      function clearDim(){
+        const fields = searchbar.querySelectorAll('.field');
+        fields.forEach(f => f.classList.remove('dimmed'));
+      }
+
+      // Focusin works for any focusable descendant (inputs)
+      searchbar.addEventListener('focusin', function(e){
+        const field = e.target.closest('.field');
+        if(field) dimOthers(field);
+      });
+
+      // Use a short timeout on focusout to allow moving between inputs
+      searchbar.addEventListener('focusout', function(e){
+        setTimeout(()=>{
+          // if no element inside searchbar is focused, clear dims
+          const active = document.activeElement;
+          if(!searchbar.contains(active)) clearDim();
+        }, 10);
+      });
+
+      // also support click-to-dim when clicking a field
+      searchbar.addEventListener('click', function(e){
+        const field = e.target.closest('.field');
+        if(field) dimOthers(field);
+      });
+
+      // clear dims when clicking outside
+      document.addEventListener('click', function(e){ if(!searchbar.contains(e.target)) clearDim(); });
+
+      // small hover feedback for the whole searchbar
+      searchbar.addEventListener('mouseenter', ()=> searchbar.classList.add('hovered'));
+      searchbar.addEventListener('mouseleave', ()=> searchbar.classList.remove('hovered'));
+    })();
+    </script>
+    <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Venu. All rights reserved.</p>
+    </footer>
+  </body>
+
+</html>
