@@ -1,0 +1,493 @@
+.header {
+  width: 100%;
+  background-color: rgb(246, 245, 245);
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; 
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 220px;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header.shrink {
+  height: 50px;
+  padding: 5px 40pxpx
+}
+ 
+.left-section {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.venu-logo {
+  height: 50px;
+  margin-left: 40px;
+  margin-top: 20px;
+   cursor: pointer;
+}
+
+
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.event-button {
+  background-color: rgb(246, 245, 245);
+  height: 60px;
+  width: 170px;
+  border-bottom: 2px solid black;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom-width: 4px;
+  margin-left: 250px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.event-button:hover {
+  opacity: 0.8;
+}
+
+.event-button:active {
+  opacity: 0.5;
+}
+
+
+.event-icon {
+  height: 50px;
+
+}
+
+.event {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+
+.right-section {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#right-section-positioning
+.right-section {
+  position: relative;
+}
+
+
+.list-your-place {
+  background-color: rgb(246, 245, 245);
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.currency {
+  background-color: rgb(246, 245, 245);
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 15px;
+  border: none;
+}
+
+
+.sign-in {
+  background-color: rgb(246, 245, 245);
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 15px;
+  border: none;
+  height: 26px;
+  cursor: pointer;
+}
+
+
+.create-account {
+  background-color: white;
+  color: black;
+  height: 36px;
+  width: 150px;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.15s,
+  color 0.15s;
+  margin-right: 10px;
+
+}
+
+
+.create-account:hover {
+  background-color: rgb(246, 245, 245);
+  opacity: 0.8;
+}
+
+.create-account:active {
+  opacity: 0.5;
+}
+
+.language-icon {
+  height: 20px;
+  width: 20px;
+}
+
+
+.burger-icon{
+  height: 30px;
+  width: 30px;
+}
+
+
+.language-button,
+.burger-button {
+  background-color: rgb(237, 235, 235);
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-button:hover {
+  background-color: rgb(210, 210, 210);
+  opacity: 0.8;
+}
+
+.burger-button:hover {
+  background-color: rgb(210, 210, 210);
+  opacity: 0.8;
+}
+
+.language-button:active {
+  opacity: 0.5;
+}
+
+.burger-button:active {
+  opacity: 0.5;
+}
+
+.venu-motto  {
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+}
+
+.searchbar {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+
+
+  background: white;
+  padding: 10px 16px;
+  border-radius: 50px;
+  border: 3px solid rgb(21, 161, 255);
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.12);
+  z-index: 30;
+}
+
+.search-button {
+  background: black;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.field {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 100px;
+  padding: 0 10px;
+  border-right: 1px solid #ddd;
+}
+
+.field:last-child {
+  border-right: none;
+}
+
+.field label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.field input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #555;
+}
+
+.field input::placeholder {
+  color: #999;
+}
+
+.search-button{
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: rgb(227, 229, 231);
+  transform: scale(1.05);
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* 1. Remove default marker and hide content initially */
+.main-dropdown-menu > summary {
+    list-style: none; /* Removes the default arrow/triangle marker */
+}
+
+/* For browsers that require it (e.g., Firefox) */
+.main-dropdown-menu > summary::-webkit-details-marker,
+.main-dropdown-menu > summary::marker {
+    display: none;
+}
+
+/* Set up the container for absolute positioning */
+.main-dropdown-menu {
+    position: relative; /* Essential for positioning the menu panel */
+    display: inline-block;
+}
+
+/* Styling the toggle button (the <summary>) */
+.burger-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* Add any other button styling like background or border */
+}
+
+/* Optional: Rotate the icon when the menu is open */
+.main-dropdown-menu[open] .burger-icon {
+    /* Example: you could rotate the image or swap it out with a background image */
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+.burger-icon {
+    width: 24px; /* Set size for your icon */
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+/* Popup menu that appears when burger is clicked */
+
+.burger-popup {
+  position: fixed; /* position relative to viewport for precise placement */
+  min-width: 200px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  padding: 10px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
+  will-change: transform, opacity;
+}
+
+.burger-popup.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.burger-popup .popup-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.burger-popup .popup-menu li {
+  padding: 8px 16px;
+}
+
+.burger-popup .popup-menu li a {
+  color: #222;
+  text-decoration: none;
+  display: block;
+}
+
+.burger-popup .popup-menu li a:hover {
+  background: #f2f2f2;
+}
+
+/* Popup button styles: use compact variants of header buttons */
+.burger-popup .popup-create,
+.burger-popup .popup-signin {
+  width: calc(100% - 20px);
+  margin: 6px 10px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+.burger-popup .popup-create {
+  background: white;
+  border: 1px solid #111;
+  color: #111;
+}
+
+.burger-popup .popup-signin {
+  background: transparent;
+  border: none;
+  color: #111;
+}
+
+/* Make sure popup buttons inherit typography */
+.burger-popup .popup-create:active,
+.burger-popup .popup-signin:active {
+  opacity: 0.7;
+}
+
+/* Menu top items (text links style) */
+.burger-popup .menu-top {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.burger-popup .menu-item {
+  background: transparent;
+  border: none;
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #222;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.burger-popup .menu-item:hover {
+  background: #f6f7f8;
+}
+
+.burger-popup .menu-divider {
+  height: 1px;
+  background: #e6e6e6;
+  margin: 10px 0;
+  border-radius: 1px;
+}
+
+.burger-popup .menu-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Auth buttons inside popup */
+.burger-popup .popup-signin {
+  background: transparent;
+  border: 1px solid #cfcfcf;
+  color: #222;
+  padding: 8px 12px;
+  border-radius: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.burger-popup .popup-create {
+  background: #2b6edc; /* blue primary */
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.burger-popup .popup-create:active,
+.burger-popup .popup-signin:active {
+  opacity: 0.85;
+}
+
+/* small pointer (caret) pointing to the burger icon */
+.burger-popup::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 18px; /* tweak to line up with burger */
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  transform: rotate(45deg);
+  box-shadow: -2px -2px 6px rgba(0,0,0,0.04);
+  z-index: 0;
+}
+
+/* ensure popup content sits above the caret's z-index */
+.burger-popup .popup-menu {
+  position: relative;
+  z-index: 1;
+}
